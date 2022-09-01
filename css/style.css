@@ -1,0 +1,115 @@
+* {
+  margin: 0%;
+  padding: 0%; }
+
+/* css del index */
+.contenedorimg {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 2vw;
+  height: 1100px;
+  flex-direction: column;
+  background-color: black; }
+  .contenedorimg figure {
+    position: relative;
+    height: 40vh;
+    width: 100vw;
+    overflow: hidden;
+    cursor: pointer;
+    border-top: 15px black solid; }
+  .contenedorimg img {
+    width: 100%;
+    height: 100%; }
+
+.capa1 {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+  background-color: rgba(0, 255, 255, 0.568);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: impact; }
+
+.contenedorimg figure:hover > .capa1 {
+  opacity: 1;
+  visibility: visible; }
+
+.resetlink {
+  text-decoration: none;
+  color: #1f1f1f;
+  font-size: 30px;
+  font-style: none; }
+  .resetlink:hover {
+    color: #1f1f1f; }
+
+.footer1 {
+  display: flex;
+  flex-direction: column; }
+
+.footer2 {
+  display: flex; }
+
+.linkf {
+  text-decoration: none;
+  font-style: none;
+  color: black;
+  font-size: 25px;
+  font-family: Impact, 'Arial Narrow Bold', sans-serif;
+  position: relative;
+  top: -3px; }
+
+.fo1 {
+  font-size: 25px;
+  color: black;
+  font-family: Impact, 'Arial Narrow Bold', sans-serif; }
+
+.numero {
+  font-size: 20px;
+  font-family: Impact, 'Arial Narrow Bold', sans-serif; }
+
+/* css de "planes y ofertas" */
+.container13 {
+  width: 100%;
+  display: grid;
+  background-color: #272727;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto auto;
+  grid-auto-columns: 1fr;
+  grid-auto-flow: row;
+  justify-items: center;
+  justify-content: center;
+  grid-template-areas: "planesyofertas" "plan1" "plan2" "plan3" "plan4"; }
+
+.planesyofertas {
+  grid-area: planesyofertas;
+  color: white; }
+
+.plan1 {
+  grid-area: plan1; }
+
+.plan2 {
+  grid-area: plan2; }
+
+.plan3 {
+  grid-area: plan3; }
+
+.plan4 {
+  grid-area: plan4; }
+
+@media (min-width: 1024px) {
+  .contenedorimg {
+    height: 1700px; }
+  .contenedorimg figure {
+    height: 70vh; }
+  .resetlink {
+    font-size: 70px; }
+  .container13 {
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: "planesyofertas planesyofertas" "plan1 plan2" "plan3 plan4"; } }
